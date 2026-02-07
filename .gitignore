@@ -1,0 +1,31 @@
+# --- Virtual Environments ---
+# This ignores your specific .venv folder
+.venv/
+venv/
+env/
+bin/
+lib/
+
+# --- Python Bytecode & Cache ---
+# These are temporary files Python creates to run faster
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Streamlit Specific ---
+# Ignores your local configuration and theme settings
+.streamlit/config.toml
+.streamlit/static/
+
+# --- System Files ---
+# Junk files created by Windows or macOS
+.DS_Store
+Thumbs.db
+*.log
+
+# --- Data/Output (Optional) ---
+# If you don't want your generated CSVs or SDFs on GitHub
+*.csv
+*.sdf
+*.mol

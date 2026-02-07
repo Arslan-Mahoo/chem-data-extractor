@@ -5,8 +5,8 @@ from chem_logic import MoleculeParser
 st.set_page_config(page_title="ChemData Extractor", page_icon="🧪")
 
 st.title("Data Extractor") 
-st.sidebar.title("Welcome to the Lab....")
-st.sidebar.text('Data Extractor')
+st.sidebar.title("Welcome to the Lab..")
+
 
 with st.container():
     st.success("Names and CIDs can be used as input")
