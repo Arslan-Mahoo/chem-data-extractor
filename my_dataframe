@@ -1,9 +1,0 @@
-name,cid,smiles,molecular_mass,molecular_formula
-2-acetyloxybenzoic acid,2244,CC(=O)OC1=CC=CC=C1C(=O)O,180.16,C9H8O4
-methane,297,C,16.043,CH4
-propan-2-one,180,CC(=O)C,58.08,C3H6O
-formaldehyde,712,C=O,30.026,CH2O
-"4-hydroxy-3-(3,7,11,15,19,23,27,31-octamethyldotriaconta-2,6,10,14,18,22,26,30-octaenyl)benzoic acid",100,CC(=CCCC(=CCCC(=CCCC(=CCCC(=CCCC(=CCCC(=CCCC(=CCC1=C(C=CC(=C1)C(=O)O)O)C)C)C)C)C)C)C)C,683.1,C47H70O3
-"[5-(5-amino-4-carbamoylimidazol-1-yl)-3,4-dihydroxyoxolan-2-yl]methyl dihydrogen phosphate",200,C1=NC(=C(N1C2C(C(C(O2)COP(=O)(O)O)O)O)N)C(=O)N,338.21,C9H15N4O8P
-,137452,CC[O],45.06,C2H5O
-2-hydroxybenzoic acid,338,C1=CC=C(C(=C1)C(=O)O)O,138.12,C7H6O3
