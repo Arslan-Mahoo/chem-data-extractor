@@ -4,7 +4,11 @@ from chem_logic import MoleculeParser
 
 st.set_page_config(page_title="ChemData Extractor", page_icon="🧪")
 
-st.title("Data Extractor") 
+name_col, tagline_col = st.columns(2)
+with name_col:
+    st.title("⚗️Chemly") 
+with tagline_col:
+    st.title("Pubchem Scraper")
 st.sidebar.title("Welcome to the Lab..")
 
 
@@ -34,7 +38,7 @@ if uploaded_file is not None:
     def progress_update(percent):
         progress_bar.progress(percent)
 
-        status_text.write(f"{100 * round(percent,2)}% Reaction Done")
+        status_text.write(f"{100 * round(percent)} % Reaction Done")
 
     start = time.perf_counter()
 
