@@ -5,7 +5,11 @@ from chem_logic import MoleculeParser
 # Title and Header Data (Must be the first Streamlit command)
 st.set_page_config(page_title="ChemData Extractor", page_icon="🧪")
 
-st.title("Data Extractor") 
+name_col, tagline_col = st.columns(2)
+with name_col:
+    st.title("⚗️Chemly") 
+with tagline_col:
+    st.title("Pubchem Scraper")
 st.sidebar.title("Welcome to the Lab..")
 
 # --- State Management Initialization ---
@@ -75,11 +79,15 @@ if uploaded_file is not None:
         parser = st.session_state.molecule_obj # We retrieve the parser to check failed inputs
         total_time = st.session_state.reaction_time
 
+<<<<<<< HEAD
         col1, col2 = st.columns(2)
         with col1:
             st.success("Compounds Cooked!!!!!")
         with col2:
             st.success(f"The Reaction took {total_time} Seconds")
+=======
+        status_text.write(f"{100 * round(percent)} % Reaction Done")
+>>>>>>> 0132422490e74348a592848f131352b102430ecf
 
         if not df.empty:
             st.subheader("Extracted Dataframe")
