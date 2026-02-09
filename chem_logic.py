@@ -41,6 +41,7 @@ class Molecule:
             print(f"Error Fetching : {self.user_input} : {e}")
             self.is_valid = False
         
+        
 
     def get_sdf(self):
             if not self.is_valid or not self.cid:
