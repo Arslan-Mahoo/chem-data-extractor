@@ -42,7 +42,13 @@ class Molecule:
             self.is_valid = False
         
 
-
+    def get_sdf(self):
+            if not self.is_valid or not self.cid:
+                return None
+            try:
+                 return pcp.get_sdf(self.cid, "cid", record_type="3d")
+            except Exception as e:
+                return None
 
     def to_dict(self):
         return {
@@ -56,6 +62,8 @@ class Molecule:
             'H_acceptor_atoms' : self.h_acceptor
         }
 
+
+        
 
 class MoleculeParser:
 
